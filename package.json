@@ -1,11 +1,11 @@
 {
-  "author": "cantide5ga",
+  "author": "aquicore",
   "name": "npm-project-template",
   "description": "<description>",
   "version": "0.1.0",
   "scripts": {
     "clean": "rm -rf build && rm -rf dist",
-    "install:latest": "npm install --save-dev typings@* typescript@* istanbul@* jasmine@*",
+    "install:latest": "npm install --save-dev typings@* typescript@* istanbul@* jasmine@* tslint@*",
     "init": "rm -rf .git && npm run install:latest && npm init && git init",
     "compile": "tsc",
     "build:tsc": "npm run compile",
@@ -21,15 +21,16 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "typings": "^0.8.1",
-    "typescript": "^1.6.2",
     "istanbul": "^0.4.2",
-    "jasmine": "^2.4.1"
+    "jasmine": "^2.4.1",
+    "tslint": "^4.5.1",
+    "typescript": "^1.6.2",
+    "typings": "^0.8.1"
   },
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cantide5ga/npm-project-template"
+    "url": "https://github.com/aquicore/npm-project-template"
   }
 }
